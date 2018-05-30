@@ -4,30 +4,22 @@
 <%@taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<title><tiles:insertAttribute name="title" ignore="true" /></title>
-<!-- Bootstrap core CSS -->
-<link
-	href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
-<!-- Custom styles for this template -->
-<link
-	href="${pageContext.request.contextPath}/resources/css/gat-style.css"
-	rel="stylesheet">
-<link href="css/bootstrap-responsive.min.css" rel="stylesheet"
-	media="screen">
-<!-- font awesome -->
-<script src="https://use.fontawesome.com/132891cbd9.js"></script>
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
-	integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
-	crossorigin="anonymous">
+	<title><tiles:insertAttribute name="title" ignore="true" /></title>
+	<!-- Bootstrap core CSS -->
+	<link href="${pageContext.request.contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="${pageContext.request.contextPath}/resources/css/heaven-style.css" rel="stylesheet">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+		integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+		crossorigin="anonymous">
 </head>
 <body>
-<%-- 	<tiles:insertAttribute name="header" /> --%>
+	<tiles:insertAttribute name="header" />
 	<tiles:insertAttribute name="main" />
-<%-- 	<tiles:insertAttribute name="footer" /> --%>
+	<tiles:insertAttribute name="footer" />
 
 	<!-- Bootstrap core JavaScript -->
 	<script type="text/javascript"
@@ -41,7 +33,6 @@
 	<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 	<script type="text/javascript"
 		src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=anRlGsCNfoEuOHfb1mmv&submodules=geocoder"></script>
-	<script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/donation.js"></script>
 	<script type="text/javascript">
 	    function execPostCode() {
 	         new daum.Postcode({
@@ -131,7 +122,7 @@
 		        } catch(e) {}
 		    }
 			
-
+	</script>
 
 	<script type="text/javascript">
 	//지도 타입 설정하는 곳 ( 아무것도 설정 하지 않으면 자동으로 Normal로 적용된다 ) 초기화할 때 설정할수 있다. 

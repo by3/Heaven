@@ -9,7 +9,7 @@
 	 	tiles view(6페이지가 조합된 페이지)가 응답된다 
 	 -->
  	<definition name="home.tiles" template="/WEB-INF/views/templates/layout.jsp">
- 		<put-attribute name="title" value="gat"/>
+ 		<put-attribute name="title" value=""/>
  		<put-attribute name="header" value="/WEB-INF/views/templates/header.jsp"/>
  		<put-attribute name="main" value="/WEB-INF/views/home.jsp"/>
  		<put-attribute name="footer" value="/WEB-INF/views/templates/footer.jsp"/> 		
