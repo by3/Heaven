@@ -1,11 +1,11 @@
-package org.kosta.heaven.model.vo;
+package org.kosta.heaven.model.vo.post;
 
 
-public class PagingBeanTen {
+public class PagingBeanFive {
 	//현재 페이지
 	private int nowPage=1;
 	//페이지당 게시물 수
-	private int postCountPerPage=10;
+	private int postCountPerPage=5;
 	//페이지 그룹당 페이지 수
 	private int pageCountPerPageGroup=5;
 	//저장된 총 게시물 수
@@ -19,14 +19,14 @@ public class PagingBeanTen {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public PagingBeanTen() {
+	public PagingBeanFive() {
 		super();
 	}
-	public PagingBeanTen(int totalPostCount) {
+	public PagingBeanFive(int totalPostCount) {
 		super();
 		this.totalPostCount = totalPostCount;
 	}
-	public PagingBeanTen(int totalPostCount, int nowPage) {
+	public PagingBeanFive(int totalPostCount, int nowPage) {
 		super();
 		this.totalPostCount = totalPostCount;
 		this.nowPage = nowPage;

@@ -2,7 +2,7 @@ package org.kosta.heaven.model.vo.user;
 
 import java.util.List;
 
-import org.kosta.heaven.model.vo.PagingBeanFive;
+import org.kosta.heaven.model.vo.post.PagingBeanFive;
 
 public class UserListVO {
 	private List<UserVO> ulist;
