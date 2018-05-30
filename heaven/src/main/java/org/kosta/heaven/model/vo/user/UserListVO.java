@@ -2,20 +2,20 @@ package org.kosta.heaven.model.vo.user;
 
 import java.util.List;
 
-import org.kosta.heaven.model.vo.PagingBeanFive;
+import org.kosta.heaven.model.vo.post.PagingBeanFive;
 
 public class UserListVO {
 	private List<UserVO> ulist;
-	private PagingBeanFive uPb;
+	private PagingBeanFive pbf;
 	
 	public UserListVO() {
 		super();
 	}
 
-	public UserListVO(List<UserVO> ulist, PagingBeanFive uPb) {
+	public UserListVO(List<UserVO> ulist, PagingBeanFive pbf) {
 		super();
 		this.ulist = ulist;
-		this.uPb = uPb;
+		this.pbf = pbf;
 	}
 
 	public List<UserVO> getUlist() {
@@ -26,17 +26,17 @@ public class UserListVO {
 		this.ulist = ulist;
 	}
 
-	public PagingBeanFive getuPb() {
-		return uPb;
+	public PagingBeanFive getpbf() {
+		return pbf;
 	}
 
-	public void setuPb(PagingBeanFive uPb) {
-		this.uPb = uPb;
+	public void setpbf(PagingBeanFive pbf) {
+		this.pbf = pbf;
 	}
 
 	@Override
 	public String toString() {
-		return "UserListVO [ulist=" + ulist + ", uPb=" + uPb + "]";
+		return "UserListVO [ulist=" + ulist + ", pbf=" + pbf + "]";
 	}
 	
 }
