@@ -1,28 +1,28 @@
-package org.kosta.heaven.model.vo.user;
+package org.kosta.heaven.model.vo.post.review;
 
 import java.util.List;
 
 import org.kosta.heaven.model.vo.post.PagingBeanFive;
 
-public class UserListVO {
-	private List<UserVO> list;
+public class ReviewListVO {
+	private List<ReviewVO> list;
 	private PagingBeanFive pbf;
 	
-	public UserListVO() {
+	public ReviewListVO() {
 		super();
 	}
 
-	public UserListVO(List<UserVO> list, PagingBeanFive pbf) {
+	public ReviewListVO(List<ReviewVO> list, PagingBeanFive pbf) {
 		super();
 		this.list = list;
 		this.pbf = pbf;
 	}
 
-	public List<UserVO> getlist() {
+	public List<ReviewVO> getList() {
 		return list;
 	}
 
-	public void setlist(List<UserVO> list) {
+	public void setList(List<ReviewVO> list) {
 		this.list = list;
 	}
 
@@ -36,7 +36,6 @@ public class UserListVO {
 
 	@Override
 	public String toString() {
-		return "UserListVO [list=" + list + ", pbf=" + pbf + "]";
+		return "ReviewListVO [list=" + list + ", pbf=" + pbf + "]";
 	}
-	
 }
