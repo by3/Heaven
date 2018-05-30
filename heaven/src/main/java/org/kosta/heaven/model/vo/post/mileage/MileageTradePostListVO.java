@@ -1,35 +1,34 @@
 package org.kosta.heaven.model.vo.post.mileage;
 
 import java.util.List;
-
 import org.kosta.heaven.model.vo.post.PagingBeanTen;
 
 public class MileageTradePostListVO {
-	private List<MileageTradeVO> mtVO;
-	private PagingBeanTen mtPb;
+	private List<MileageTradeVO> list;
+	private PagingBeanTen pbt;
 	
 	public MileageTradePostListVO() {
 		super();
 	}
-	public MileageTradePostListVO(List<MileageTradeVO> mtVO, PagingBeanTen mtPb) {
+	public MileageTradePostListVO(List<MileageTradeVO> list, PagingBeanTen pbt) {
 		super();
-		this.mtVO = mtVO;
-		this.mtPb = mtPb;
+		this.list = list;
+		this.pbt = pbt;
 	}
-	public List<MileageTradeVO> getMtVO() {
-		return mtVO;
+	public List<MileageTradeVO> getlist() {
+		return list;
 	}
-	public void setMtVO(List<MileageTradeVO> mtVO) {
-		this.mtVO = mtVO;
+	public void setlist(List<MileageTradeVO> list) {
+		this.list = list;
 	}
-	public PagingBeanTen getMtPb() {
-		return mtPb;
+	public PagingBeanTen getpbt() {
+		return pbt;
 	}
-	public void setMtPb(PagingBeanTen mtPb) {
-		this.mtPb = mtPb;
+	public void setpbt(PagingBeanTen pbt) {
+		this.pbt = pbt;
 	}
 	@Override
 	public String toString() {
-		return "MileageTradePostListVO [mtVO=" + mtVO + ", mtPb=" + mtPb + "]";
+		return "MileageTradePostListVO [list=" + list + ", pbt=" + pbt + "]";
 	}
 }

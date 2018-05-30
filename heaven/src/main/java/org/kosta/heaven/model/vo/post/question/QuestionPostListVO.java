@@ -4,38 +4,38 @@ import java.util.List;
 import org.kosta.heaven.model.vo.post.PagingBeanFive;
 
 public class QuestionPostListVO {
-	private List<QuestionPostVO> wqPostVO;
-	private PagingBeanFive wqPb;
+	private List<QuestionPostVO> list;
+	private PagingBeanFive pbf;
 	
 	public QuestionPostListVO() {
 		super();
 	}
 	
-	public QuestionPostListVO(List<QuestionPostVO> wqPostVO, PagingBeanFive wqPb) {
+	public QuestionPostListVO(List<QuestionPostVO> list, PagingBeanFive pbf) {
 		super();
-		this.wqPostVO = wqPostVO;
-		this.wqPb = wqPb;
+		this.list = list;
+		this.pbf = pbf;
 	}
 	
-	public List<QuestionPostVO> getWqPostVO() {
-		return wqPostVO;
+	public List<QuestionPostVO> getlist() {
+		return list;
 	}
 	
-	public void setWqPostVO(List<QuestionPostVO> wqPostVO) {
-		this.wqPostVO = wqPostVO;
+	public void setlist(List<QuestionPostVO> list) {
+		this.list = list;
 	}
 	
-	public PagingBeanFive getWqPb() {
-		return wqPb;
+	public PagingBeanFive getpbf() {
+		return pbf;
 	}
 	
-	public void setWqPb(PagingBeanFive wqPb) {
-		this.wqPb = wqPb;
+	public void setpbf(PagingBeanFive pbf) {
+		this.pbf = pbf;
 	}
 	
 	@Override
 	public String toString() {
-		return "QuestionPostListVO [wqPostVO=" + wqPostVO + ", wqPb=" + wqPb + "]";
+		return "QuestionPostListVO [list=" + list + ", pbf=" + pbf + "]";
 	}
 	
 }
