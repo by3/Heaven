@@ -1,4 +1,4 @@
-package org.kosta.heaven.model.dao;
+/*package org.kosta.heaven.model.dao;
 
 import java.util.List;
 
@@ -43,3 +43,4 @@ public class MileageDAOImpl implements MileageDAO {
 		template.insert("mileage.saveMileage", mileageTradeVO);
 	}
 }
+*/
