@@ -2,7 +2,7 @@ package org.kosta.heaven.model.vo.user;
 
 public class UserVO {
 	private String id;
-	private String Password;
+	private String password;
 	private String name;
 	private String birthday;
 	private String gender;
@@ -22,7 +22,7 @@ public class UserVO {
 			String companyNo, int mileage, int totalUseMileage, UserGroupVO userGroupVO, UserGradeVO userGradeVO) {
 		super();
 		this.id = id;
-		Password = password;
+		this.password = password;
 		this.name = name;
 		this.birthday = birthday;
 		this.gender = gender;
@@ -44,11 +44,11 @@ public class UserVO {
 	}
 
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 
 	public String getName() {
@@ -133,7 +133,7 @@ public class UserVO {
 
 	@Override
 	public String toString() {
-		return "UserVO [id=" + id + ", Password=" + Password + ", name=" + name + ", birthday=" + birthday + ", gender="
+		return "UserVO [id=" + id + ", password=" + password + ", name=" + name + ", birthday=" + birthday + ", gender="
 				+ gender + ", address=" + address + ", email=" + email + ", companyNo=" + companyNo + ", mileage="
 				+ mileage + ", totalUseMileage=" + totalUseMileage + ", userGroupVO=" + userGroupVO + ", userGradeVO="
 				+ userGradeVO + "]";

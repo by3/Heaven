@@ -34,7 +34,7 @@
 				<div class="card-body text-center">
 					<div class="divider"></div>
 					<span class="small-txt desc-color mr-1">이미 기부앤테이크 계정이 있으신가요?</span>
-					<a class="small-txt point-txt" href="${pageContext.request.contextPath }/users/login.do">로그인</a>
+					<a class="small-txt point-txt" href="${pageContext.request.contextPath}/users/login.do">로그인</a>
 				</div>
 			</div>
 		</div>
